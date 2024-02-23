@@ -11,8 +11,10 @@ def inc_5():
     num2 = int(input())
     if num2<num1 :
         print("Second integer can't be less than the first.")
-    if num1 <= num2:
-        
+    while num1 <= num2:
+        print(num1, end= " ")
+        num1 = num1+5
+
 
 
 
