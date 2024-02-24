@@ -8,12 +8,16 @@ Lab Time: friday at 3
 def norm():
     # Write your code here
     num=[]
-    nums= int(input())
+    nums=int(input())
+
     for i in range(nums):
-        val = float(input())
+        val=float(input())
         num.append(val)
-    max=max(num)
-    for i in range (num):
+
+    max_num=max(num)
+
+    for i in range (nums):
         print(f'{num[i]/max:.2f}')
+        
     if __name__ == "__main__":
         norm()
