@@ -7,7 +7,10 @@ Lab Time: Friday at 3
 
 def reverse_string():
     # YOUR CODE HERE
-    
-
+    reverse_string = str(input())
+    stop = ['Done', 'done', 'd']
+    while reverse_string not in stop:
+        print(reverse_string[::-1])
+        
     if __name__ == "__main__":
         reverse_string()
