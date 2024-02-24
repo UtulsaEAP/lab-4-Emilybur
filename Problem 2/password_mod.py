@@ -9,19 +9,20 @@ def password_mod():
     word = input()
     password = ''
     # Type your code here.
-    replacements  = {
-        'i': '1',
-        'a': '@',
-        'm': 'M',
-        'B': '8',
-        's': '$'
-    }
-    password_mod=''
-    for char in password:
-        password_mod += replacements.get(char,char) 
-    password_mod = str(password_mod)
-    password_mod += '!'
-    print(password_mod)
+    character= input()
+    if (character == 'i'):
+        password += '1'
+    elif (character == 'a'):
+        password += '@'
+    elif (character == 'm'):
+        password += 'M'
+    elif (character == 'B'):
+        password += '8'
+    elif (character == 's'):
+        password += '$'
+    else:
+        password += character 
+    print(password)
 
     if __name__ == "__main__":
         password_mod()
