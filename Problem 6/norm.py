@@ -11,13 +11,11 @@ def norm():
     nums=int(input())
 
     for i in range(nums):
-        val=float(input())
+        val = float(input())
         num.append(val)
 
-    max_num=max(num)
-
     for i in range (nums):
-        print(f'{num[i]/max:.2f}')
-        
+        print(f'{num[i]//100.0:.2f}')
+
     if __name__ == "__main__":
         norm()

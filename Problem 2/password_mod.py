@@ -9,6 +9,19 @@ def password_mod():
     word = input()
     password = ''
     # Type your code here.
-    
+    character= input()
+    if (character == 'i'):
+        password += '1'
+    elif (character == 'a'):
+        password += '@'
+    elif (character == 'm'):
+        password += 'M'
+    elif (character == 'B'):
+        password += '8'
+    elif (character == 's'):
+        password += '$'
+    else:
+        password += character 
+    print(password)
     if __name__ == "__main__":
         password_mod()
